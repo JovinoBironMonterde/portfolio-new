@@ -1,0 +1,213 @@
+
+.contact-section{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+ 
+}
+.contact-container{
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+.contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+
+}
+
+.contact-img{
+    flex: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-img img{
+    width: 420px;
+    position: absolute;
+}
+.contributionlink{
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: all .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-img:hover .contributionlink{
+    opacity: 1;
+}
+
+.form-container{
+    flex: 50%;
+    width: 100%;
+    padding: 25px;
+    justify-content: center;
+}
+.context{
+  width: 100%;
+  text-align: center;
+  color: gray;
+}
+.context .number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.context .number div{
+  margin: 0 10px;
+}
+.line_or{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0px 50px;
+}
+.line_or hr{
+  width: 100%;
+  margin: 0 10px;
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+/* form .mb-6 input{} */
+form .mb-6 input, textarea{
+  position: relative;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px !important;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: 1.5px solid gray;
+    background-color: transparent !important;
+
+}
+
+textarea{
+    resize: none;
+      z-index: 9999999 !important;
+}
+.inputbtn{
+  width: 100% !important;
+  border-radius: 25px;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  font-size: 18px;
+  background-color: orange !important;
+}
+form .mb-6{
+  position: relative;
+    margin: 20px 0;
+    background-color: transparent !important;
+}
+
+.cstm-label{
+    position: absolute !important;
+    top: 12px !important;
+    left: 20px;
+    font-size: 16px;
+    transition: all .3s ease;
+    color: black;
+    background-color: #fff;
+    padding: 0 5px;
+    color: gray;
+  }
+
+
+ .mb-6 input{
+    position: relative;
+    background-color: transparent !important;
+   font-weight: 300 !important;
+    transition: all .3s ease;
+    z-index: 9999999 !important;
+  }
+  input:focus +  .cstm-label, input:not(:placeholder-shown) + .cstm-label{
+   transform: translateY(-1.6em);
+   transition: all .3s ease ease-in-out;
+   left: 10px;
+   font-size: 14px;
+   color: black;
+   font-weight: 500 !important;
+   z-index: 9999999;
+  }
+    .inputField:focus +  .cstm-label,  .inputField:not(:placeholder-shown) + .cstm-label{
+   transform: translateY(-1.6em);
+   transition: all .2s ease;
+   left: 10px;
+   font-size: 14px;
+   color: black;
+   font-weight: 500 !important;
+   z-index: 9999999;
+  }
+  
+ 
+  .mb-6 .inputField::placeholder{
+    color: transparent;
+    font-size: 14px;
+  }
+  .mb-6 .inputField:focus::placeholder{
+    color: gray;
+    font-size: 14px;
+  }
+
+   .mb-6 .inputField:focus{
+
+    outline: 1.5px solid orange !important;
+  }
+   .mb-6 .inputField:hover{
+
+    outline: 1.5px solid orange !important;
+  }
+  @media (max-width: 881px) {
+    .contact-img{
+      display: none;
+    }
+  }
+  @media (max-width: 650px){
+    .context{
+      font-size: 14px;
+    }
+    .contact-img{
+      display: none;
+    }
+    form{
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+svg#freepik_stories-social-media:not(.animated) .animable {opacity: 0;}svg#freepik_stories-social-media.animated #freepik--background-complete--inject-28 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;animation-delay: 0s;}svg#freepik_stories-social-media.animated #freepik--Shadow--inject-28 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight;animation-delay: 0s;}svg#freepik_stories-social-media.animated #freepik--Floor--inject-28 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;animation-delay: 0s;}svg#freepik_stories-social-media.animated #freepik--Device--inject-28 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) zoomOut;animation-delay: 0s;}svg#freepik_stories-social-media.animated #freepik--paper-plane--inject-28 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedLeft;animation-delay: 0s;}svg#freepik_stories-social-media.animated #freepik--Character--inject-28 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;animation-delay: 0s;}svg#freepik_stories-social-media.animated #freepik--speech-bubbles--inject-28 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;animation-delay: 0s;}svg#freepik_stories-social-media.animated #freepik--Icons--inject-28 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;animation-delay: 0s;}            @keyframes slideRight {                0% {                    opacity: 0;                    transform: translateX(30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }                    @keyframes lightSpeedRight {              from {                transform: translate3d(50%, 0, 0) skewX(-20deg);                opacity: 0;              }              60% {                transform: skewX(10deg);                opacity: 1;              }              80% {                transform: skewX(-2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }                    @keyframes slideLeft {                0% {                    opacity: 0;                    transform: translateX(-30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }                    @keyframes zoomOut {                0% {                    opacity: 0;                    transform: scale(1.5);                }                100% {                    opacity: 1;                    transform: scale(1);                }            }                    @keyframes lightSpeedLeft {              from {                transform: translate3d(-50%, 0, 0) skewX(20deg);                opacity: 0;              }              60% {                transform: skewX(-10deg);                opacity: 1;              }              80% {                transform: skewX(2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }       

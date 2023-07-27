@@ -1,0 +1,269 @@
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    z-index: 99999999999;
+    border-bottom: 1px solid transparent;
+    color: white;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent ;
+}
+.nav-con{
+  position: relative;
+  width: 100% !important;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px;
+
+}
+.logo{
+  width: 150px;
+}
+.logo2{
+  display: none;
+}
+
+
+ .burger_close{
+    display: none;
+ }
+.nav-transparent{
+  background-color: transparent;
+}
+.nav-colored{
+    background-color: rgba(0, 0, 0, 0.829);
+    transition: all .4s ;
+}
+    .humburger-menu{
+        display: none;
+    }
+
+ul{
+    display: flex;
+    margin: 0;
+}
+ul li{
+    border-radius: 3px;
+    list-style: none;
+    padding: 5px 10px;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+}
+ul li:hover{
+  background-color: rgb(168, 111, 5);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+ul li a:hover{
+cursor: pointer;
+color: rgb(235, 229, 229);
+
+}
+
+.humburger-menu{
+  position: relative;
+    z-index: 999999999999;
+    width: 40px;
+    height: 30px;
+    padding-right: 20px !important;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all .5s ease;
+
+}
+.humburger-menu:hover{
+    cursor: pointer;
+}
+
+.bar1,  .bar2, .bar3{
+    position: absolute;
+    height: 3.5px;
+    background-color: orange;
+    top: 10px;
+   right: 0;
+}
+.check-dnon{
+    display: none;
+}
+.bar1{
+    width: 25px;
+    top: 2px;
+}
+ .bar2{
+    width: 35px;
+    top: 13px;
+}
+.bar3{
+     width: 25px;
+     top: 23px;
+}
+
+
+.humburger-menu:hover .bar1{
+      animation: 1s in-out;
+      transition: all .5s ease;
+}
+ .humburger-menu:hover .bar3{
+      animation: 1s in-out;
+      transition: all .5s ease;
+}
+ .humburger-menu:hover .bar2{
+     animation: 1s in-out2 ;
+      transition: all .5s ease;
+ }
+ @keyframes in-out {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+     width: 25px;
+  
+  }
+}
+@keyframes in-out2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 35px;
+  
+  }
+}
+.cbar1, .cbar2{
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: orange;
+}
+
+.cbar1{
+    rotate: 50deg;
+}
+.cbar2{
+    rotate: -50deg;
+}
+.burger_close:hover .cbar1{
+    animation: 1s cbar_anim1 ;
+      transition: all .1s ease;
+}
+.burger_close:hover .cbar2{
+    animation: 1s cbar_anim2 ;
+      transition: all .1s ease;
+}
+@keyframes cbar_anim1 {
+  0% {
+    width: 0;
+    /* rotate: 0deg; */
+  }
+  50% {
+    width: 10px;
+   /* rotate: 50deg; */
+  }
+  100% {
+    width: 25px;
+   /* rotate: 120deg; */
+  
+  }
+}
+@keyframes cbar_anim2 {
+  0% {
+    width: 5px;
+    /* rotate: 0deg; */
+  }
+  50% {
+    width: 10px;
+   /* rotate: 50deg; */
+  }
+  100% {
+    width: 25px;
+   /* rotate: 120deg; */
+  
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .logo2{
+    display: block;
+    width: 180px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+  .mynavbar{
+    width: 100%;
+    overflow: hidden;
+  }
+  .humburger-menu{
+      display: block !important;
+      margin-right: 0% !important;
+  }
+
+  .burger_close{
+      position: absolute;
+      top: 35px;
+      right: 65px;
+  } .burger_close{
+      display: block;
+  }
+  .nav-con {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+ul{
+      position: absolute !important;
+      display: block !important;
+      text-align: center;
+      width: 100%;
+      height: 100vh !important;
+      top: -100vh;
+      right: 0%;
+      left: 0;
+      padding: 20px;
+
+      padding-top: 160px;
+
+      background-color: rgba(0, 0, 0, 0.938);
+      transition: all .5s ease;
+      z-index: 99999999999999999 !important;
+      overflow:visible;
+  }
+   ul li{
+     padding: 10px;
+     width: 100%;
+     margin: 20px 0 !important;
+   }
+   ul li a{
+    font-size: 24px;
+
+   }
+   ul li a:hover{
+        background-color: rgb(46, 45, 45);
+        padding: 0;
+   }
+    ul li:hover{
+      cursor: pointer;
+       background-color: rgb(46, 45, 45);
+    }
+  #mycheck:checked ~  ul{ 
+        overflow: visible;
+      top: 0px !important;
+  }
+}

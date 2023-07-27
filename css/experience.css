@@ -1,0 +1,200 @@
+.experience-section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 50px 0 !important;
+    padding-bottom: 0 !important;
+}
+.profession::before{
+    position: absolute !important;
+    height: 450px;
+    width: 450px;
+    background-color: #b47d17;
+    z-index: 99;
+    border-radius:25px;
+    left: -40px;
+  
+  }
+
+  .icons{
+    position: relative;
+  }
+
+.exp-container{
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: auto;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.experience-section .exp-container::before{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 90%;
+    left: 50%;
+   margin: auto;
+    background-color: rgb(40, 56, 70);
+    z-index: 999999;
+}
+.profession{
+    width: 100%;
+   position: relative;
+    
+}
+.contact-container{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-content{
+    width: 100%;
+ 
+    margin: auto 0;
+}
+.bar-container{
+    width: 100%;
+    text-align: right;
+    padding: 25px;
+    padding-right: 40px;
+   padding-left: 20%;
+
+}
+.barCon{
+    margin: 10px 0;
+}
+.bars{
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: gray;
+    border-radius: 5px;
+}
+.percent{
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* width: 90%; */
+    height:8px;
+    background-color: rgb(6, 109, 109);
+    text-align: left;
+       border-radius: 5px;
+}
+.percent span{
+    position: absolute;
+    margin-top: -23px;
+    left: 0;
+    font-size: 14px !important;
+}
+.experience{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.experience-container{
+    width: 100%;
+    text-align: left;
+    padding: 25px;
+    padding-left: 40px;
+    padding-right: 125px;
+    padding-top: 0 !important;
+}
+
+.expCon{
+     margin: 40px 0;
+}
+.html{
+    width: 90%;
+}
+.css{
+    width: 90%;
+}
+.tailwind{
+    width: 70%;
+}
+.bootstrap{
+    width: 80%;
+}
+.javascript{
+    width: 75%;
+}
+.reactnext{
+    width: 70%;
+}
+.vb{
+    width: 80%;
+}
+.wordpress{
+    width: 75%;
+}
+.webflow{
+    width: 75%;
+}
+.mysql{
+    width: 75%;
+}
+.git{
+    width: 75%;
+}
+.linr-hr, .linr-hr2{
+    display: none;
+}
+
+@media (max-width: 890px){
+    .linr-hr, .linr-hr2{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .experience-section .exp-container::before{
+        display: none;
+    }
+    .exp-container{
+        display: block;
+    }
+    .bar-container{
+       text-align: left;
+       padding: 25px;
+        padding-bottom: 10px !important;
+    
+    }
+    label{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .percent{
+        left: 0 ;
+        text-align: right;
+    }
+    .percent span{
+        position: absolute;
+        margin-top: -22px;
+        right: 0 !important;
+        font-size: 18px;
+    }
+    .experience-container{
+       padding: 25px;
+    }
+    .experience-section{
+        padding: 0;
+    }
+    
+}
+@media (max-width: 890px){
+    label{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .bar-container, .experience-container{
+        padding: 25px 0 !important;
+    }
+}

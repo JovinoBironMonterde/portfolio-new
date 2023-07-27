@@ -1,0 +1,206 @@
+
+.about-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 130px!important;
+    padding-bottom: 20px;
+}
+.about-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100% !important;
+  max-width: 1300px;
+    margin: 0 auto;
+  
+
+}
+.about-container .con{
+    flex: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+.profile{
+    width: 320px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    overflow: hidden;
+    background: white;
+    background: linear-gradient(0deg, rgba(195, 168, 34, 0.486) 0%, rgba(153,148,0,0.03235880533854163) 93%);
+}
+.profile::before{
+    position: absolute;
+    content: '';
+    width: 350px;
+    height: 350px;
+    top: -20px;
+    left: 140px;
+  border-radius: 50%;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    rotate: 20deg;
+    background-color: rgba(255, 166, 0, 0.037);
+}
+.conbfor::before{
+    position: absolute;
+    content: '';
+    width: 320px;
+    height: 360px;
+    top: -20px;
+    left: 160px;
+  border-radius: 50%;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    rotate: 90deg;
+    background-color: rgba(255, 166, 0, 0.103);
+}
+.about-text::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    right: -120px;
+    background-color: rgba(255, 166, 0, 0.123);
+}
+.about-text{
+    position: relative;
+    flex: 60%;
+    font-size: 20px;
+}
+.about-text .icon{
+    position: relative;
+    width: 100%;
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center !important;
+  
+}
+.S_icon2{
+    display: flex;
+}
+.About-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0 5px;
+    color: rgb(73, 73, 73);
+}
+.About-icon:hover{
+    color: orange;
+    /* display: flex;
+    align-items: center; */
+    background-color: rgba(255, 166, 0, 0.185);
+}
+
+.anim-typ{
+    width: auto;
+    height: 20px;
+    padding-right: 4px;
+    color: orange;
+    border: none;
+    border-right: 2px solid orange;
+    text-align: left;
+    margin: 20px 0;
+
+}
+
+.profile img{
+   padding-top: 30px;
+   padding-left: 40px;
+}
+
+.btnsocial{
+    color: black;
+}
+.ab-icon{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+}
+.con{
+    position: relative;
+}
+.icon-wordpress{
+    right: 130px;
+    top: 100px;
+    color: blue;
+    /* filter: drop-shadow(0 0 0.75rem crimson); */
+}
+.icon-html{
+    overflow: visible;
+    left: -30px;
+    top: 120px;
+    color: red; 
+    
+}
+.icon-css{
+    bottom: -0px;
+    left: -20px;
+    color: blue;
+}
+.icon-javascript{
+    top: -60px;
+    left: 240px;
+    color: black;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .about-container{
+        display: block;
+    }
+    .about-text {
+        text-align: center;
+        padding: 0;
+        text-align: justify;
+    }
+
+    
+.S_icon1, .S_icon2{
+    justify-content: center;
+}
+
+}
+@media only screen and (max-width: 390px) {
+    .about-section{
+        padding-top: 80px !important;
+    }
+    .profile{
+        width: 250px;
+        height: 250px;
+        
+    }
+.S_icon1{
+    width: 100% !important;
+    justify-content: center;
+}
+.btnlinked{
+    width: 100% !important;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0 !important;
+}
+.S_icon2{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+}
